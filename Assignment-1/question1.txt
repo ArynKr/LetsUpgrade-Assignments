@@ -1,6 +1,17 @@
-122
-32
-02
-112
-NaN2
-NaN
+1 - Ans: 122
+    Explanation: Here, the 1 is numeric but the first 2 is a string. Javascript will perform some automatic type conversion to make this operation possible, converting the 1 to a string as well. So “1” + “2” becomes “12.” Concatenate the second “2” to that and the final answer is “122”.
+
+2 - Ans: 32
+    Explanation: In this code snippet, the second + sign is processed first, as what is called an unary operation, which simply refers to the existence of a + or — in front of a number to designate it as a positive or negative. Javascript will process that second + sign on the first “2,” and automatically transform it into a number. so 1 + (+2) becomes 3. The second “2” is still a string, however, so it gets concatenated onto the 3 (which turns into a string), resulting in “32”.
+
+3 - Ans: 02
+    Explanation: Quite the same explanation as above (part-2) which will result in "02".
+
+4 - Ans: 112
+    Explanation: Following the same logic as above, the answer to this one is “112.” The first “1” turns into a number due to the unary operation of the first +, but then because the second “1” is still a string, the first “1” turns back into a string. Concatenate those two and the final “2” together and you get “112”.
+
+5 - Ans: NaN2
+    Explanation: This one is a little sneaky. The — operator can’t be applied to strings, so Javascript takes “A” — “B” to equal NaN. NaN, which has a bunch of unusual properties I can’t fully remember, then gets concatenated with the “2” and you end up with a final answer of “NaN2”.
+
+6 - Ans: NaN
+    Explanation: With a little twist to the previous snippet, here you add the number 2 to the NaN you get from the first operation. NaN + any number gets you NaN still, so the final answer here is "NaN".
