@@ -1,0 +1,4 @@
+Ans         - Undefined
+Explanation - This is because first we initialize clothes as an array of ['jacket', 't-shirt']. 
+              Then after making clothes.length = 0 the clothes array become empty as we made the size to 0.
+              There since the clothes array is empty, hence the output is 'undefined'.
